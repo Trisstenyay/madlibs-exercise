@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+
+
+{% block style %} 
+body {
+    background-color: red;
+}
+{% endblock %}
+
+{% block title %} form {% endblock %}
+
+{% block content %}
+<form action="/story">
+    <p>noun: <input type="text" placeholder="noun" name="noun"></p>
+    <p>verb: <input type="text" placeholder="verb" name="verb"></p>
+    <p>plural noun: <input type="text" placeholder="plural noun" name="plural_noun"></p>
+    <p>adjective: <input type="text" placeholder="adjective" name="adjective"></p>
+    <p>place: <input type="text" placeholder="place" name="place"></p>
+    <button>Submit</button>
+</form>
+{% endblock %}
